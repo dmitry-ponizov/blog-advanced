@@ -1,0 +1,27 @@
+{
+    "name": "ponizov/meta",
+    "description": "This is for testing",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitry Ponizov",
+            "email": "podmge@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Ponizov\\Meta\\": "src/ "
+        }
+    },
+    "extra": {
+        "laravel": {
+            "provider": [
+                "Ponizov\\Meta\\MetaServiceProvider"
+            ],
+            "aliases": {
+                "Meta": "Ponizov\\Meta\\MetaFacade"
+            }
+        }
+    }
+}
